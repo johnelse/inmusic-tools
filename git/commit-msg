@@ -8,7 +8,14 @@ import re
 import sys
 
 def fail(msg):
-    print msg
+    altered_msg = u"| %s! |" % msg
+    print
+    print u"_" * len(altered_msg)
+    print altered_msg
+    print u"-" * len(altered_msg)
+    print u"    /"
+    print u"\u0028\u256f\u00b0\u25a1\u00b0\u0029\u256f\ufe35 \u253b\u2501\u253b"
+    print
     sys.exit(1)
 
 def main():
