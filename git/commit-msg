@@ -2,6 +2,8 @@
 
 """
 git commit message hook script.
+
+Put me at /your/git/repo/.git/hooks/commit-msg
 """
 
 import re
