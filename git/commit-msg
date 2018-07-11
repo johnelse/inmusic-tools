@@ -9,25 +9,28 @@ Put me at /your/git/repo/.git/hooks/commit-msg
 import re
 import sys
 
+def log(message=""):
+    sys.stdout.write("%s\n" % message)
+
 def bubble(msg):
     altered_msg = u"| %s! |" % msg
-    print
-    print u"_" * len(altered_msg)
-    print altered_msg
-    print u"-" * len(altered_msg)
+    log()
+    log(u"_" * len(altered_msg))
+    log(altered_msg)
+    log(u"-" * len(altered_msg))
 
 def fail(msg):
     bubble(msg)
-    print u"    /"
-    print u"\u0028\u256f\u00b0\u25a1\u00b0\u0029\u256f\ufe35 \u253b\u2501\u253b"
-    print
+    log(u"    /")
+    log(u"\u0028\u256f\u00b0\u25a1\u00b0\u0029\u256f\ufe35 \u253b\u2501\u253b")
+    log()
     sys.exit(1)
 
 def ok(msg):
     bubble(msg)
-    print u"     /"
-    print u"\u0028\u30d8\uff65\u005f\uff65\u0029\u30d8\u252c\u2500\u2500\u252c"
-    print
+    log(u"     /")
+    log(u"\u0028\u30d8\uff65\u005f\uff65\u0029\u30d8\u252c\u2500\u2500\u252c")
+    log()
 
 def main():
     if len(sys.argv) != 2:
