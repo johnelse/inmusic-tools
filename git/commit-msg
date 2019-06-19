@@ -57,6 +57,8 @@ def main():
                 fail("no bug description")
         elif words[0] == "Merge":
             pass
+        elif words[0] == "Revert":
+            pass
         else:
             fail("invalid tag")
 
