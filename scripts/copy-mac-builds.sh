@@ -5,7 +5,7 @@ set -eux
 WORKSPACE=/Volumes/Jenkins/Jenkins/Home/workspace
 PACKAGES_PATH=Software/Build/Mac/build/Packages
 
-DIRECTORIES="ACVS-trunk-Mac-git ACVS-1to1-Mac"
+DIRECTORIES="ACVS-trunk-Mac-git ACVS-1to1-Mac ACVS-arrange-Mac"
 
 for DIRECTORY in $DIRECTORIES
 do

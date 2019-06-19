@@ -2,7 +2,7 @@
 
 set -eux
 
-DIRECTORIES="ACV5-acvs_trunk ACV8-acvs_trunk ADA2-acvs_1to1"
+DIRECTORIES="ACV5-acvs_trunk ACV8-acvs_trunk ADA2-acvs_1to1 ADA2-acvs_arrange"
 
 for DIRECTORY in $DIRECTORIES
 do
