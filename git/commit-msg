@@ -55,9 +55,7 @@ def main():
                 fail("invalid bug number")
             if len(words) < 3 or len(words[2]) == 0:
                 fail("no bug description")
-        elif words[0] == "Merge":
-            pass
-        elif words[0] == "Revert":
+        elif words[0] in ["Merge", "Revert"]:
             pass
         else:
             fail("invalid tag")
