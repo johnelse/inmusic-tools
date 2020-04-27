@@ -10,7 +10,7 @@ import re
 import sys
 
 def log(message=""):
-    sys.stdout.write("%s\n" % message)
+    print(message.encode('utf-8'))
 
 def bubble(msg):
     altered_msg = u"| %s! |" % msg
