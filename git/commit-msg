@@ -46,8 +46,6 @@ def main():
             pass
         elif words[0] == "[wip]":
             pass
-        elif words[0] == "[internal]":
-            pass
         elif words[0] == "[feature]":
             pass
         elif words[0] == "[bug]":
@@ -57,7 +55,7 @@ def main():
                 fail("no bug description")
         elif words[0] in ["Merge", "Revert"]:
             pass
-        else:
+        elif title[0] == '[':
             fail("invalid tag")
 
         ok("nice commit message")
