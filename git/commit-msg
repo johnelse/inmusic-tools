@@ -38,7 +38,7 @@ def main():
 
     with open(sys.argv[1], "r") as message_file:
         title = message_file.readline()
-        words = title.split(" ")
+        words = title.strip().split(" ")
 
         if words[0] in ["[build]", "[wip]", "[feature]"]:
             if len(words) < 2 or len(words[1]) == 0:
