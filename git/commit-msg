@@ -40,7 +40,7 @@ def main():
         title = message_file.readline()
         words = title.strip().split(" ")
 
-        if words[0] in ["[build]", "[wip]", "[feature]"]:
+        if words[0] in ["[build]", "[update]", "[feature]"]:
             if len(words) < 2 or len(words[1]) == 0:
                 fail("not enough words in commit message")
         elif words[0] == "[bug]":
